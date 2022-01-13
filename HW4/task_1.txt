@@ -1,0 +1,27 @@
+a. Проверить, установлен ли пакет pillow в глобальном окружении. Если да — зафиксировать версию.
+PS C:\Users\pavel\Desktop\PythonB> pip show pillow
+WARNING: Package(s) not found: pillow
+
+b. Установить самую свежую версию pillow, если ранее она не была установлена.
+PS C:\Users\pavel\Desktop\PythonB> pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.0-cp39-cp39-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+
+c. Создать и активировать виртуальное окружение. Убедиться, что в нем нет пакета
+PS C:\Users\pavel\Desktop\PythonB> venv\Scripts\activate.ps1
+(venv) PS C:\Users\pavel\Desktop\PythonB> pip show pillow
+WARNING: Package(s) not found: pillow
+
+d. Установить в виртуальное окружение pillow версии 7.1.1 (или другой, отличной от самой свежей).
+(venv) PS C:\Users\pavel\Desktop\PythonB> pip install pillow==8.4.0
+Collecting pillow==8.4.0
+  Downloading Pillow-8.4.0-cp39-cp39-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 2.2 MB/s
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+
+e. Деактивировать виртуальное окружение.
+(venv) PS C:\Users\pavel\Desktop\PythonB> deactivate
+PS C:\Users\pavel\Desktop\PythonB>
