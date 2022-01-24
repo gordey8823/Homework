@@ -3,11 +3,7 @@ import shutil
 
 
 def reform_dir(root_dir, search_file='index.html'):
-    # if os.path.exists(templates_path):
-    #     shutil.rmtree(templates_path)
     for root, dirs, files in os.walk(root_dir):
-        # if root == templates_path:
-        #     break
         if search_file in set(files):
             templates_path = os.path.join(root_dir, 'templates')
             if not os.path.exists(templates_path):
