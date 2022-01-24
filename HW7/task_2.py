@@ -44,8 +44,6 @@ if __name__ == "__main__":
             x.rstrip().count(" "),
             x.find(":") > 0
         ), conf_text.readlines())
-        print(*conf)
-
     make_project(-1, list(conf), os.getcwd())
 
     exit(0)
