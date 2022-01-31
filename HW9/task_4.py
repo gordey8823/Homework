@@ -37,7 +37,6 @@ class Car:
         :return: в stdout сообщение по формату
             '<название марки машины>: движется <direction>'
         """
-
         if direction in ('направо', 'налево', 'прямо', 'назад'):
             print(f'{self.name}({self.__class__.__name__}): движется {direction}')
         else:
@@ -58,6 +57,7 @@ class Car:
 
 # определите классы TownCar, WorkCar, SportCar, PoliceCar согласно условия задания
 class TownCar(Car):
+
     def show_speed(self) -> None:
         if self.speed <= 60:
             Car.show_speed(self)
@@ -66,6 +66,7 @@ class TownCar(Car):
 
 
 class WorkCar(Car):
+
     def show_speed(self) -> None:
         if self.speed <= 40:
             Car.show_speed(self)

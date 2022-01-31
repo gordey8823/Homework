@@ -17,6 +17,7 @@ class Road:
         """
         return self._length * self._width * hight * mass_m_2 // 1000
 
+
 if __name__ == '__main__':
     road = Road(5000, 20)
     print(f'Для изготовления покрытия дороги нужно {road.calculate()} тонн.')

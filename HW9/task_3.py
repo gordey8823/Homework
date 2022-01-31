@@ -13,8 +13,6 @@ class Position(Worker):
         """Возвращает строку по формату 'Имя Фамилия'"""
         return f'{self.name} {self.surname}'.title()
 
-
-
     def get_total_income(self) -> int:
         """Возвращает суммарный ежемесячных доход"""
         return sum(value for value in self._income.values())
