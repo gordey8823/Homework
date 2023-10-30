@@ -1,4 +1,5 @@
 def transform_string(number: int) -> str:
+    """Возвращает строку вида 'N процентов' с учётом склонения по указанному number"""
     if number % 10 == 1 and number % 100 != 11:
         result = f'{number} процент'
     elif 2 <= number % 10 <= 4 and (number % 100 < 10 or number % 100 > 20):

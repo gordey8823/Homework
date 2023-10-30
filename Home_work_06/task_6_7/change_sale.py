@@ -2,7 +2,7 @@ import sys
 
 
 def change_sale(argv):
-    # Проверка. существует ли запись. Если да то записываем построчно в bakery_copy.csv
+    # Проверка. Существует ли запись. Если да то записываем построчно в bakery_copy.csv
     with open('bakery.csv', 'r', encoding='utf-8') as fr:
         line = fr.readline()
         count = 0
